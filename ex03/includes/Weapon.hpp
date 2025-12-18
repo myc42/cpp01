@@ -6,7 +6,7 @@
 /*   By: macoulib <macoulib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 17:49:42 by macoulib          #+#    #+#             */
-/*   Updated: 2025/12/17 19:38:13 by macoulib         ###   ########.fr       */
+/*   Updated: 2025/12/18 15:26:59 by macoulib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,13 @@
 class Weapon
 {
     private :
-            std::string _type;
+           std::string _type;
     public :
-            Weapon(std::string newType);
-            void getType() const ;
-            void setType(std::string newType) ;
+            Weapon( std::string newType);
+             Weapon() {};
+            ~Weapon(){};
+            const std::string& getType() const ;
+            void setType(const std::string& newType) ;
 } ;
 
 #endif

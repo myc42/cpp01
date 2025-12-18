@@ -6,16 +6,16 @@
 /*   By: macoulib <macoulib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 17:49:35 by macoulib          #+#    #+#             */
-/*   Updated: 2025/12/17 18:50:54 by macoulib         ###   ########.fr       */
+/*   Updated: 2025/12/18 15:29:07 by macoulib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
-#include "HumanA.hpp"
-#include "HumanB.hpp"
 
+#include "./includes/Weapon.hpp"
+#include "./includes/HumanA.hpp"
+#include "./includes/HumanB.hpp"
 
-int main(int main )
+int main(void )
 {
   {
       Weapon club =  Weapon("crude spiked club");

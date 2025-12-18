@@ -6,30 +6,24 @@
 /*   By: macoulib <macoulib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 17:49:24 by macoulib          #+#    #+#             */
-/*   Updated: 2025/12/17 19:44:50 by macoulib         ###   ########.fr       */
+/*   Updated: 2025/12/18 15:29:25 by macoulib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
-#include "HumanA.hpp"
-#include "HumanB.hpp"
+#include "../includes/Weapon.hpp"
+#include "../includes/HumanA.hpp"
+#include "../includes/HumanB.hpp"
 
 
 
-HumanA::HumanA(std::string names , Weapon weapon2)
-{
-    this->_name = names ;
-    (void)weapon2;
-}
-
-HumanA::~HumanA()
+HumanA::HumanA(std::string names , Weapon weapon2) : _name(names) , NewWeapon(weapon2)
 {
     
 }
 
-
- void attack(){
-    
+void HumanA::attack(){ 
+    std::cout << _name <<  "  attacks with their" << NewWeapon.getType() << std::endl ;
  }
+
 
 

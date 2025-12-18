@@ -6,11 +6,11 @@
 /*   By: macoulib <macoulib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 17:49:32 by macoulib          #+#    #+#             */
-/*   Updated: 2025/12/17 19:46:26 by macoulib         ###   ########.fr       */
+/*   Updated: 2025/12/18 14:51:39 by macoulib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HUMANAB_HPP
+#ifndef HUMANB_HPP
 #define HUMANB_HPP
 
 #include <iostream>
@@ -24,9 +24,10 @@ class HumanB
    
     private :
             std::string _name ;
-            Weapon NewWeapon;
+             Weapon NewWeapon;
     public :
-            HumanB(std::string names);
+            HumanB(const std::string newName , Weapon wea);
+            HumanB(std::string newName);
             ~HumanB();
             void attack();
             void set_Weapon(Weapon wea) ;
