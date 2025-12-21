@@ -6,7 +6,7 @@
 /*   By: macoulib <macoulib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 18:20:52 by macoulib          #+#    #+#             */
-/*   Updated: 2025/12/17 16:37:20 by macoulib         ###   ########.fr       */
+/*   Updated: 2025/12/21 17:28:13 by macoulib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Zombie
             Zombie(){};
             Zombie(std::string _name);
            ~Zombie();
-    void announce(void);
+           void announce(void);
 } ;
 
 Zombie* newZombie( std::string name );

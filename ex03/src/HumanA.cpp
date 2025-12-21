@@ -6,7 +6,7 @@
 /*   By: macoulib <macoulib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 17:49:24 by macoulib          #+#    #+#             */
-/*   Updated: 2025/12/18 15:29:25 by macoulib         ###   ########.fr       */
+/*   Updated: 2025/12/21 17:54:25 by macoulib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 
 
-HumanA::HumanA(std::string names , Weapon weapon2) : _name(names) , NewWeapon(weapon2)
+HumanA::HumanA(std::string names , Weapon& weapon2) : _name(names) , NewWeapon(weapon2)
 {
     
 }

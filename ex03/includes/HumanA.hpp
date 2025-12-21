@@ -6,7 +6,7 @@
 /*   By: macoulib <macoulib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 17:49:26 by macoulib          #+#    #+#             */
-/*   Updated: 2025/12/18 14:36:46 by macoulib         ###   ########.fr       */
+/*   Updated: 2025/12/21 17:54:18 by macoulib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ class HumanA
    
     private :
             std::string _name ;
-            Weapon NewWeapon;
+            Weapon& NewWeapon;
     public :
-            HumanA(std::string names, Weapon weapon2);
+            HumanA(std::string names, Weapon&  weapon2);
             ~HumanA (){};
             void attack();
             

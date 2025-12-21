@@ -25,6 +25,8 @@ class Harl
             void warning( void );
             void error( void );
     public :
+    	    Harl(){};
+    	    ~Harl(){};
             void complain( std::string level );
     
 } ;

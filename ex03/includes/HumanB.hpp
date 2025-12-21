@@ -6,7 +6,7 @@
 /*   By: macoulib <macoulib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 17:49:32 by macoulib          #+#    #+#             */
-/*   Updated: 2025/12/18 14:51:39 by macoulib         ###   ########.fr       */
+/*   Updated: 2025/12/21 18:35:56 by macoulib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,12 @@ class HumanB
    
     private :
             std::string _name ;
-             Weapon NewWeapon;
+            Weapon *NewWeapon;
     public :
-            HumanB(const std::string newName , Weapon wea);
-            HumanB(std::string newName);
+            HumanB(const std::string newName );
             ~HumanB();
             void attack();
-            void set_Weapon(Weapon wea) ;
+            void set_Weapon(Weapon &wea) ;
 
 } ;
 
